@@ -89,7 +89,7 @@ void tocaPausa(unsigned int pausa)
 {
   TACCR0 = 1000;      //PERÍODO DO PWM
   TACCTL1 = OUTMOD_7;   //MODO DE SAÍDA DO TIMER0_A: RESET/SET
-  TACCR1 = 0;     //DUTY CYCLE DO PWM EM 50%
+  TACCR1 = 0;     //NIVEL LOGICO BAIXO
   TACTL = TASSEL_2 + MC_1;  //TASSEL_2 -> CLOCK SOURCE: MCLK  MC_1 ->                           //TIMER COM CONTAGEM PROGRESSIVA DE 0 ATÉ TACCR1
   delay_ms(pausa);
 }
