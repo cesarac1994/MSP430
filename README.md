@@ -653,7 +653,7 @@ Com base na tabela a seguir, criada pelo [professor Fernando Iazzetta do Departa
 
 </center>
 
-## Resultados do Início
+## Análise dos resultados iniciais
 
 Utilizando-se um analisador lógico da fabricante [Salae] (dispositivo semelhante a um osciloscópio que exibe a forma de onda em um de seus oito canais), obteve-se os resultados das ondas quadradas geradas no pino de saída do PWM da MSP430, e o resultados estão demonstrados nas imagens a seguir.
 
@@ -684,6 +684,12 @@ Utilizando-se um analisador lógico da fabricante [Salae] (dispositivo semelhant
 ![](assets/markdown-img-paste-20190901001833387.png)
 <center> Onda gerada a partir da nota musical B1 (si)</center>
 <p></p>
+
+
+## Musica infantil do-re-mi-fa-fa-fa
+
+A partir de então, criou-se a melodia da musiquinha infantil do-re-mi-fa (programa doReMiFa_FaFa.c).
+
 
 
 
