@@ -1,9 +1,9 @@
-#include <msp430.h> 
+#include <msp430.h>
 #include <msp430g2452.h>
 #define TIME_STARTT 200 //200 ms
 #define TIME_STOPP 100 //100 ms
 
-//ESCALA DOS PERÍODOS DAS NOTAS DE C1 A C9 (8 OITAVAS NO TOTAL)
+//ESCALA DOS PERÍODOS DAS NOTAS DE C1 A B8 (8 OITAVAS NO TOTAL)
 #define NOTE_C1 15289
 #define NOTE_D1 13621
 #define NOTE_E1 12135
@@ -35,7 +35,7 @@
 #define NOTE_G4 1276
 #define NOTE_A4 1136
 #define NOTE_B4 1012
- 
+
 #define NOTE_C5 956
 #define NOTE_D5 851
 #define NOTE_E5 758
@@ -60,14 +60,13 @@
 #define NOTE_A7 142
 #define NOTE_B7 127
 
-#define NOTE_C8 119 
+#define NOTE_C8 119
 #define NOTE_D8 106
 #define NOTE_E8 95
 #define NOTE_F8 89
 #define NOTE_G8 80
 #define NOTE_A8 71
 #define NOTE_B8 63
-#define NOTE_C9 60
 
 void delay_ms(unsigned int delay)
 {
@@ -137,7 +136,7 @@ tocaNota(NOTE_G1,TIME_STARTT);      //PERÍODO DO PWM
 tocaNota(NOTE_A1,TIME_STARTT);      //PERÍODO DO PWM
   tocaPausa(TIME_STOPP);
 tocaNota(NOTE_B1,TIME_STARTT);      //PERÍODO DO PWM
-  tocaPausa(TIME_STOPP);  
+  tocaPausa(TIME_STOPP);
 //2
 tocaNota(NOTE_C2,TIME_STARTT);      //PERÍODO DO PWM
   tocaPausa(TIME_STOPP);
@@ -152,7 +151,7 @@ tocaNota(NOTE_G2,TIME_STARTT);      //PERÍODO DO PWM
 tocaNota(NOTE_A2,TIME_STARTT);      //PERÍODO DO PWM
   tocaPausa(TIME_STOPP);
 tocaNota(NOTE_B2,TIME_STARTT);      //PERÍODO DO PWM
-  tocaPausa(TIME_STOPP);  
+  tocaPausa(TIME_STOPP);
 
 //3
 tocaNota(NOTE_C3,TIME_STARTT);      //PERÍODO DO PWM
@@ -168,7 +167,7 @@ tocaNota(NOTE_G3,TIME_STARTT);      //PERÍODO DO PWM
 tocaNota(NOTE_A3,TIME_STARTT);      //PERÍODO DO PWM
   tocaPausa(TIME_STOPP);
 tocaNota(NOTE_B3,TIME_STARTT);      //PERÍODO DO PWM
-  tocaPausa(TIME_STOPP);  
+  tocaPausa(TIME_STOPP);
 //4
 tocaNota(NOTE_C4,TIME_STARTT);      //PERÍODO DO PWM
   tocaPausa(TIME_STOPP);
@@ -183,7 +182,7 @@ tocaNota(NOTE_G4,TIME_STARTT);      //PERÍODO DO PWM
 tocaNota(NOTE_A4,TIME_STARTT);      //PERÍODO DO PWM
   tocaPausa(TIME_STOPP);
 tocaNota(NOTE_B4,TIME_STARTT);      //PERÍODO DO PWM
-  tocaPausa(TIME_STOPP);  
+  tocaPausa(TIME_STOPP);
 
 //5
 tocaNota(NOTE_C5,TIME_STARTT);      //PERÍODO DO PWM
@@ -199,7 +198,7 @@ tocaNota(NOTE_G5,TIME_STARTT);      //PERÍODO DO PWM
 tocaNota(NOTE_A5,TIME_STARTT);      //PERÍODO DO PWM
   tocaPausa(TIME_STOPP);
 tocaNota(NOTE_B5,TIME_STARTT);      //PERÍODO DO PWM
-  tocaPausa(TIME_STOPP);  
+  tocaPausa(TIME_STOPP);
 //6
 tocaNota(NOTE_C6,TIME_STARTT);      //PERÍODO DO PWM
   tocaPausa(TIME_STOPP);
@@ -256,4 +255,3 @@ tocaPausa(1000);
   return 0;
 
 }
-
