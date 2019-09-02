@@ -3,7 +3,7 @@
 #define TIME_STARTT 200 //200 ms
 #define TIME_STOPP 100 //100 ms
 
-//ESCALA DOS PERÍODOS DAS NOTAS DE C5 A B5 
+//ESCALA DOS PERÍODOS DAS NOTAS DE C5 A B5
 #define NOTE_C5 956
 #define NOTE_D5 851
 #define NOTE_E5 758
@@ -81,6 +81,7 @@ while(1)
   tocaNota(NOTE_F5,TIME_STARTT);      //PERÍODO DO PWM
   tocaPausa(TIME_STOPP);
   tocaPausa(TIME_STOPP);
+  tocaPausa(TIME_STOPP);
   //fa fa
   tocaNota(NOTE_F5,TIME_STARTT);      //PERÍODO DO PWM
   tocaPausa(TIME_STOPP);
@@ -102,6 +103,7 @@ while(1)
   tocaNota(NOTE_D5,TIME_STARTT);      //PERÍODO DO PWM
   tocaPausa(TIME_STOPP);
   tocaNota(NOTE_D5,TIME_STARTT);      //PERÍODO DO PWM
+  tocaPausa(TIME_STOPP);
   tocaPausa(TIME_STOPP);
 
   //do sol fa mi
@@ -129,6 +131,7 @@ while(1)
   tocaNota(NOTE_E5,TIME_STARTT);      //PERÍODO DO PWM
   tocaPausa(TIME_STOPP);
   tocaNota(NOTE_F5,TIME_STARTT);      //PERÍODO DO PWM
+  tocaPausa(TIME_STOPP);
   tocaPausa(TIME_STOPP);
   tocaPausa(TIME_STOPP);
   //fa fa
